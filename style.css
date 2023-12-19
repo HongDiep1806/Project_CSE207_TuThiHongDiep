@@ -1,0 +1,699 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@600&family=Poppins:ital,wght@0,400;0,700;1,200;1,300;1,400&display=swap');
+@media screen and (max-width: 600px) {
+    header .content::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 80%;
+        /* border: 1px solid #000; */
+        background: url(img/photo.avif)no-repeat center center/cover;
+        border-radius: 10px;
+        z-index: -1;
+    }
+
+
+header .content .cont_bx h1 {
+    font-size: 20px;
+    font-weight: bolder;
+    /* border: 1px solid #000; */
+    overflow-wrap: break-word;
+}
+
+header .content .cont_bx h1 {
+    word-wrap: break-word;
+}
+
+header .content .cont_bx h1 {
+    white-space: normal;
+}
+
+header .content .cont_bx h1 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    /* Maximum number of lines */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+header .content .cont_bx p {
+    width: 50%;
+    font-size: 12px;
+    font-weight: 100;
+    color: #fff;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    background-color: #fff;
+}
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu .dropdown:hover>.dropdown-menu {
+    top: 10px;
+    left: 60%;
+}
+
+
+.offers {
+    width: 60%;
+    height: auto;
+    /* border: 1px solid #000; */
+    margin: auto;
+    margin-top: 100px;
+}
+
+.offers h1 {
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+}
+
+.offers p {
+    font-weight: 500;
+    text-align: center;
+    margin: 0;
+}
+
+.offers .cards {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid #000; */
+    flex-wrap: wrap;
+}
+
+.offers .cards .card {
+    position: relative;
+    width: 200px;
+    height: 350px;
+    /* border: 1px solid #000; */
+    margin: 10px;
+}
+
+.offers .cards .card h3 {
+    width: 140px;
+    padding: 6px 0px;
+    background: rgb(165, 243, 165);
+    border-radius: 20px;
+    font-size: 12px;
+    display: grid;
+    place-items: center;
+    margin: auto;
+}
+
+.offers .cards .card .img_text {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    margin-top: 5px;
+
+}
+
+.offers .cards .card .img_text img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.offers .cards .card .img_text h4 {
+    position: absolute;
+    font-size: 9px;
+    padding: 10px 15px;
+    bottom: 0;
+    color: #fff;
+    margin: 0;
+    z-index: 2;
+}
+
+.offers .cards .card .img_text h4:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255, .1);
+    backdrop-filter: blur(5px);
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+}
+
+.offers .cards .card .cont_bx {
+    width: 94%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid rgb(214, 214, 214);
+    padding: 0px 5px;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.offers .cards .card .cont_bx .price,
+.dayes {
+    margin: 0px 8px;
+}
+
+.offers .cards .card .cont_bx .price .heart_chat {
+    margin: 0px 8px;
+}
+
+.offers .cards .card .cont_bx .price .heart_chat i:nth-last-child(1) {
+    color: red;
+    font-size: 13px;
+    margin-right: 10px;
+}
+
+.offers .cards .card .cont_bx .price .heart_chat i span {
+    color: #000;
+    font-size: 12px;
+    margin-left: 3px;
+    font-style: normal;
+}
+
+.offers .cards .card .cont_bx .price .heart_chat i:nth-last-child(2) {
+    color: rgb(112, 196, 229);
+    font-size: 13px;
+    margin-right: 10px;
+}
+
+.offers .cards .card .cont_bx .price .info_price {
+    display: flex;
+    align-items: center;
+    margin-top: 3px;
+}
+
+.offers .cards .card .cont_bx .price .info_price a {
+    text-decoration: none;
+    color: #000;
+    font-size: 11px;
+    font-weight: 700;
+    transition: .3 linear;
+    margin-right: 13px;
+}
+
+.offers .cards .card .cont_bx .price .info_price a:hover {
+    color: aqua;
+}
+
+.offers .cards .card .cont_bx .price .info_price h4 {
+    margin: 0;
+    font-size: 13px;
+}
+
+.offers .cards .card .cont_bx .dayes {
+    color: #fff;
+    background: #000;
+    font-size: 8px;
+    border-radius: 50%;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: .3 linear;
+}
+
+.offers .cards .card .cont_bx .dayes:hover {
+    transform: scale(0.75);
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    background: rgb(153, 204, 204);
+    margin-top: 20px;
+    padding: 20px;
+    /* Add padding to adjust for iPhone screen */
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    backdrop-filter: blur(0.5px);
+}
+
+footer p {
+    text-align: center;
+    width: 400px;
+    font-size: 13px;
+}
+
+footer .input {
+    box-shadow: 0px 3px 20px -1px gray;
+    border-radius: 20px;
+}
+
+footer .input input {
+    padding: 12px 15px;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    border-radius: 20px 0px 0px 20px;
+}
+
+footer .input button {
+    padding: 12px 15px;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    border-radius: 0px 20px 20px 0px;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+footer .input button:hover {
+    background: gray;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    /* align-items: center; */
+    margin-top: 30px;
+}
+
+footer ul li {
+    text-align: center;
+    margin-right: 30px;
+    font-weight: bold;
+}
+
+footer ul li h6 {
+    font-size: 11px;
+    font-size: 600;
+    max-width: 120px;
+    margin: 0;
+    line-height: 18px;
+    border-top: 1px solid #000;
+    padding-top: 3px;
+
+}
+
+#scrollToTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgb(113, 159, 159);
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 20px;
+}
+}
+
+/* *{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+} */
+body {
+    font-family: 'Poppins', sans-serif;
+    ;
+}
+
+header {
+    width: 80%;
+    height: 95vh;
+    /* border: 1px solid #000; */
+    margin: auto;
+}
+
+header nav {
+    width: 95%;
+    height: 7%;
+    /* border: 1px solid #000; */
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0%;
+}
+
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    padding: 3px 15px;
+}
+
+
+header nav ul li a {
+    text-decoration: none;
+    color: #121213;
+    font-size: 13px;
+    font-weight: 500;
+    transition: 3x linear;
+
+}
+
+header nav ul li a:hover {
+    color: aqua;
+
+}
+
+header nav .fa-ellipsis-h {
+    display: none;
+
+}
+
+
+
+header .content {
+    position: relative;
+    width: 100%;
+    height: 93%;
+    /* border: 1px solid #000; */
+}
+
+header .content::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    /* border: 1px solid #000; */
+    background: url(img/photo.avif)no-repeat center center/cover;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+header .content .cont_bx {
+    width: 500px;
+    height: auto;
+    color: black;
+    padding: 30px;
+}
+
+header .content .cont_bx h1 {
+    width: 100%;
+    line-height: 40px;
+    font-weight: bolder;
+    /* border: 1px solid #000; */
+}
+
+header .content .cont_bx p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    background-color: #fff;
+}
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu .dropdown:hover>.dropdown-menu {
+    top: 10px;
+    left: 60%;
+}
+
+
+.offers {
+    width: 60%;
+    height: auto;
+    /* border: 1px solid #000; */
+    margin: auto;
+    margin-top: 100px;
+}
+
+.offers h1 {
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+}
+
+.offers p {
+    font-weight: 500;
+    text-align: center;
+    margin: 0;
+}
+
+.offers .cards {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid #000; */
+    flex-wrap: wrap;
+}
+
+.offers .cards .card {
+    position: relative;
+    width: 200px;
+    height: 350px;
+    /* border: 1px solid #000; */
+    margin: 10px;
+}
+
+.offers .cards .card h3 {
+    width: 140px;
+    padding: 6px 0px;
+    background: rgb(165, 243, 165);
+    border-radius: 20px;
+    font-size: 12px;
+    display: grid;
+    place-items: center;
+    margin: auto;
+}
+
+.offers .cards .card .img_text {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    margin-top: 5px;
+
+}
+
+.offers .cards .card .img_text img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.offers .cards .card .img_text h4 {
+    position: absolute;
+    font-size: 9px;
+    padding: 10px 15px;
+    bottom: 0;
+    color: #fff;
+    margin: 0;
+    z-index: 2;
+}
+
+.offers .cards .card .img_text h4:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255, .1);
+    backdrop-filter: blur(5px);
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+}
+
+.offers .cards .card .cont_bx {
+    width: 94%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid rgb(214, 214, 214);
+    padding: 0px 5px;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.offers .cards .card .cont_bx .price,
+.dayes {
+    margin: 0px 8px;
+}
+
+.offers .cards .card .cont_bx .price .heart_chat {
+    margin: 0px 8px;
+}
+
+.offers .cards .card .cont_bx .price .heart_chat i:nth-last-child(1) {
+    color: red;
+    font-size: 13px;
+    margin-right: 10px;
+}
+
+.offers .cards .card .cont_bx .price .heart_chat i span {
+    color: #000;
+    font-size: 12px;
+    margin-left: 3px;
+    font-style: normal;
+}
+
+.offers .cards .card .cont_bx .price .heart_chat i:nth-last-child(2) {
+    color: rgb(112, 196, 229);
+    font-size: 13px;
+    margin-right: 10px;
+}
+
+.offers .cards .card .cont_bx .price .info_price {
+    display: flex;
+    align-items: center;
+    margin-top: 3px;
+}
+
+.offers .cards .card .cont_bx .price .info_price a {
+    text-decoration: none;
+    color: #000;
+    font-size: 11px;
+    font-weight: 700;
+    transition: .3 linear;
+    margin-right: 13px;
+}
+
+.offers .cards .card .cont_bx .price .info_price a:hover {
+    color: aqua;
+}
+
+.offers .cards .card .cont_bx .price .info_price h4 {
+    margin: 0;
+    font-size: 13px;
+}
+
+.offers .cards .card .cont_bx .dayes {
+    color: #fff;
+    background: #000;
+    font-size: 8px;
+    border-radius: 50%;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: .3 linear;
+}
+
+.offers .cards .card .cont_bx .dayes:hover {
+    transform: scale(0.75);
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    background: rgb(153, 204, 204);
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    backdrop-filter: blur(0.5px);
+}
+
+footer p {
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    /* Set the maximum width for the text */
+    font-size: 13px;
+    word-wrap: break-word;
+}
+
+footer .input {
+    box-shadow: 0px 3px 20px -1px gray;
+    border-radius: 20px;
+}
+
+footer .input input {
+    padding: 12px 15px;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    border-radius: 20px 0px 0px 20px;
+}
+
+footer .input button {
+    padding: 12px 15px;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    border-radius: 0px 20px 20px 0px;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+footer .input button:hover {
+    background: gray;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    /* align-items: center; */
+    margin-top: 30px;
+}
+
+footer ul li {
+    text-align: center;
+    margin-right: 30px;
+    font-weight: bold;
+}
+
+footer ul li h6 {
+    font-size: 11px;
+    font-size: 600;
+    max-width: 120px;
+    margin: 0;
+    line-height: 18px;
+    border-top: 1px solid #000;
+    padding-top: 3px;
+
+}
+
+#scrollToTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgb(113, 159, 159);
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 20px;
+}

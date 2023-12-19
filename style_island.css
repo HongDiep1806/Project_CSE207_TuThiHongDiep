@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@600&family=Poppins:ital,wght@0,400;0,700;1,200;1,300;1,400&display=swap');
+@media screen and (max-width: 600px) {
+    header .content1::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 80%;
+        /* border: 1px solid #000; */
+        background: url(img/beach.jpg)no-repeat center center/cover;
+        border-radius: 10px;
+        z-index: -1;
+    }
+    header {
+        width: 90%;
+        height: 10vh;
+        /* border: 1px solid #000; */
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+}
+/* *{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+} */
+body {
+    font-family: 'Poppins', sans-serif;
+    ;
+}
+
+header {
+    width: 80%;
+    height: 95vh;
+    /* border: 1px solid #000; */
+    margin: auto;
+}
+
+header nav {
+    width: 95%;
+    height: 7%;
+    /* border: 1px solid #000; */
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    padding: 3px 15px;
+}
+
+
+header nav ul li a {
+    text-decoration: none;
+    color: #121213;
+    font-size: 13px;
+    font-weight: 500;
+    transition: 3x linear;
+
+}
+
+header nav ul li a:hover {
+    color: aqua;
+
+}
+
+header nav .fa-ellipsis-h {
+    display: none;
+
+}
+
+header .content1 {
+    position: relative;
+    width: 100%;
+    height: 93%;
+    /* border: 1px solid #000; */
+}
+
+header .content1::before {
+    content: '';
+    position: absolute;
+    width: 40%;
+    height: 70%;
+    /* border: 1px solid #000; */
+    background: url(img/beach.jpg)no-repeat center center/cover;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.text {
+    display: block;
+    margin-left: 50px;
+}
+
+header .content1 .cont_bx1 {
+    width: 500px;
+    height: auto;
+    color: black;
+    padding: 30px;
+}
+
+header .content1 .cont_bx1 h1 {
+    width: 500px;
+    line-height: 40px;
+    font-weight: 800;
+    /* border: 1px solid #000; */
+}
+
+header .content1 .cont_bx1 p {
+    font-size: 14px;
+    font-weight: 400;
+    color: black;
+}
+
+header .content2 {
+    position: relative;
+    width: 100%;
+    height: 93%;
+    /* border: 1px solid #000; */
+}
+
+header .content2::before {
+    content: '';
+    position: absolute;
+    width: 40%;
+    height: 70%;
+    /* border: 1px solid #000; */
+    background: url(img/beach.jpeg)no-repeat center center/cover;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+header .content2 .cont_bx1 {
+    width: 500px;
+    height: auto;
+    color: black;
+    padding: 30px;
+}
+
+header .content2 .cont_bx1 h1 {
+    width: 500px;
+    line-height: 40px;
+    font-weight: 800;
+    /* border: 1px solid #000; */
+}
+
+header .content2 .cont_bx1 p {
+    font-size: 14px;
+    font-weight: 400;
+    color: black;
+}
+
+header .content3 {
+    position: relative;
+    width: 100%;
+    height: 93%;
+    /* border: 1px solid #000; */
+}
+
+header .content3::before {
+    content: '';
+    position: absolute;
+    width: 40%;
+    height: 70%;
+    /* border: 1px solid #000; */
+    background: url(img/Dao-Phu-Quy-28.jpg)no-repeat center center/cover;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+
+header .content3 .cont_bx1 {
+    width: 500px;
+    height: auto;
+    color: black;
+    padding: 30px;
+}
+
+header .content3 .cont_bx1 h1 {
+    width: 500px;
+    line-height: 40px;
+    font-weight: 800;
+    /* border: 1px solid #000; */
+}
+
+header .content3 .cont_bx1 p {
+    font-size: 14px;
+    font-weight: 400;
+    color: black;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    background-color: #fff;
+}
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu .dropdown:hover>.dropdown-menu {
+    top: 10px;
+    left: 60%;
+}
